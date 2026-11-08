@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ArpFour — Four-bar Arpeggio Desk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>ArpFour</h1>
+    <p>Four-bar live arpeggio desk. Your chords get a moving line that finishes the loop.</p>
+    <div id="status">Tap to start audio · seating chairs…</div>
+  </header>
+  <section class="controls">
+    <label>BPM <input type="number" id="bpm" min="60" max="180" value="100"></label>
+    <label>Key <select id="key"><option>C</option><option>G</option><option>D</option><option>A</option><option>E</option><option>F</option><option>Bb</option><option>Am</option><option>Em</option><option>Dm</option></select></label>
+    <label>Chords <input type="text" id="chords" value="Am F C G" placeholder="Am F C G"></label>
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="export">Export WAV + MIDI</button>
+  </section>
+  <section id="recipes"></section>
+  <section id="bars"></section>
+  <footer>Live FluidR3 samples · Pinned to PreEight@d58301e4 · No oscillators · Distinct from WalkBass, VoicingForge, HookLine, CallFour</footer>
+  <script src="app.js"></script>
+</body>
+</html>
